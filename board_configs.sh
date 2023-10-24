@@ -244,6 +244,14 @@ case ${BOARD} in
 		export CROSS_COMPILE=aarch64-linux-gnu-
 		CHIP="rk3566"
 		;;
+	"rk3566-radxa-cm3-io")
+		DEFCONFIG=rockchip_linux_defconfig
+		UBOOT_DEFCONFIG=radxa-cm3-io-rk3566_defconfig
+		DTB=rk3566-radxa-cm3-io.dtb
+		export ARCH=arm64
+		export CROSS_COMPILE=aarch64-linux-gnu-
+		CHIP="rk3566"
+		;;
 	"rk3566-rock-3c")
 		DEFCONFIG=rockchip_linux_defconfig
 		UBOOT_DEFCONFIG=rock-3c-rk3566_defconfig
